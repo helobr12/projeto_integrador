@@ -1,9 +1,10 @@
 
 ---
 
-# Roteiro 2 – Branches
+# Roteiro – Branches
 
-## 1) Voltando a um commit (Revert / Reset) - Roteiro 1 (ainda)
+## <span style="color:red">1) Voltando a um commit (Revert / Reset) - Roteiro 1 (ainda) ✅</span>
+
 
 | Método          | Quando usar                             | Comando principal                     |
 | --------------- | --------------------------------------- | ------------------------------------- |
@@ -34,8 +35,8 @@
 > **Dica:** nunca use `git reset --hard` depois que commits já foram enviados e utilizados por outros.
 
 ---
+## <span style="color:red">2) Convenções de **Git Semântico** (Conventional Commits) ✅</span>
 
-## 2) Convenções de **Git Semântico** (Conventional Commits)
 
 Use mensagens padronizadas e curtas, com **tipo**, **escopo** (opcional) e **resumo no imperativo**.
 
@@ -73,8 +74,8 @@ chore(deps): atualizar axios para ^1.7.0
 
 > **Por que usar?** Facilita *changelog*, leitura do histórico e automações (versionamento semântico, release notes, validações de CI).
 
+## <span style="color:red"> 3) Trabalhando com `git stash` ✅</span>
 
-## 3) Trabalhando com `git stash`
 
 O `git stash` é usado para **guardar mudanças temporariamente** sem precisar fazer commit, permitindo trocar de branch ou atualizar código sem perder alterações não finalizadas.
 
@@ -111,7 +112,8 @@ O `git stash` é usado para **guardar mudanças temporariamente** sem precisar f
 
 > Útil quando precisa trocar de branch no meio do desenvolvimento ou atualizar a `main` sem perder o que já começou.
 
-## 4) Convenções de **nomenclatura** de branches
+## <span style="color:red">4) Convenções de **nomenclatura** de branches ✅</span>
+
 
 Use nomes curtos, descritivos e com *slug* (kebab-case). Inclua tipo e, se houver, ID do ticket.
 
@@ -123,7 +125,9 @@ Use nomes curtos, descritivos e com *slug* (kebab-case). Inclua tipo e, se houve
 
 ---
 
-## 5) Criar branch a partir da `main`
+## <span style="color:red"> 5) Criar branch a partir da `main` ✅</span>
+
+
 
 Sempre atualize sua `main` local antes de ramificar.
 
@@ -137,7 +141,8 @@ git checkout -b feature/1234-criar-endpoint-pedidos
 
 ---
 
-## 6) Ciclo de commits (aplicando Git Semântico)
+## <span style="color:red">6) Ciclo de commits (aplicando Git Semântico) ✅</span>
+
 
 Mantenha commits pequenos, coesos e com mensagens claras.
 
@@ -149,8 +154,8 @@ git commit -m "feat(api): criar endpoint POST /pedidos Adiciona validações e i
 ```
 
 ---
+## <span style="color:red">7) Manter sua branch atualizada (rebase recomendado) ✅</span>
 
-## 7) Manter sua branch atualizada (rebase recomendado)
 
 Enquanto desenvolve, replique alterações da `main` para evitar *big bang merges*.
 
